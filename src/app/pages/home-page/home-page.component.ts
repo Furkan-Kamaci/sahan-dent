@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContentService, Content } from '../../services/content.service';
 import { HeroComponentComponent } from './hero-component/hero-component.component';
 import { VerilenHizmetlerComponent } from './verilen-hizmetler/verilen-hizmetler.component';
 
