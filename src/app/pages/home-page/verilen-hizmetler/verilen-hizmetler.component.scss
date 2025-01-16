@@ -1,8 +1,10 @@
 // @import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
+@use 'bootstrap' as *;
 
 .container {
   padding: 20px;
+
 }
 
 .card {

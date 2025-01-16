@@ -13,17 +13,17 @@ export class VerilenHizmetlerComponent {
     {
       title: 'Sağlık Hizmeti 1',
       description: 'Bu hizmet sağlık alanında sunulmaktadır.',
-      image: 'https://via.placeholder.com/150',
+      image: 'images/dis-image.png',
     },
     {
       title: 'Sağlık Hizmeti 2',
       description: 'Sağlık hizmetleri arasında popülerdir.',
-      image: 'https://via.placeholder.com/150',
+      image: 'images/dis-image.png',
     },
     {
       title: 'Sağlık Hizmeti 3',
       description: 'En iyi sağlık hizmetlerinden biridir.',
-      image: 'https://via.placeholder.com/150',
+      image: 'images/dis-image.png',
     },
   ];
 
