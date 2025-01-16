@@ -11,18 +11,50 @@ encapsulation: ViewEncapsulation.ShadowDom,
 export class VerilenHizmetlerComponent {
   services = [
     {
-      title: 'Sağlık Hizmeti 1',
-      description: 'Bu hizmet sağlık alanında sunulmaktadır.',
+      title: 'Diş Çekimi',
+      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
       image: 'images/dis-image.png',
     },
     {
-      title: 'Sağlık Hizmeti 2',
-      description: 'Sağlık hizmetleri arasında popülerdir.',
+      title: 'Ortodontik Tedavi',
+      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
       image: 'images/dis-image.png',
     },
     {
-      title: 'Sağlık Hizmeti 3',
-      description: 'En iyi sağlık hizmetlerinden biridir.',
+      title: 'Pedodonti (Çocuk Diş Hekimliği)',
+      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
+      image: 'images/dis-image.png',
+    },
+
+    {
+      title: 'Diş Çekimi',
+      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
+      image: 'images/dis-image.png',
+    },
+    {
+      title: 'Ortodontik Tedavi',
+      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
+      image: 'images/dis-image.png',
+    },
+    {
+      title: 'Pedodonti (Çocuk Diş Hekimliği)',
+      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
+      image: 'images/dis-image.png',
+    },
+
+    {
+      title: 'Diş Çekimi',
+      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
+      image: 'images/dis-image.png',
+    },
+    {
+      title: 'Ortodontik Tedavi',
+      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
+      image: 'images/dis-image.png',
+    },
+    {
+      title: 'Pedodonti (Çocuk Diş Hekimliği)',
+      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
       image: 'images/dis-image.png',
     },
   ];
