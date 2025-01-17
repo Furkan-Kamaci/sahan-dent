@@ -1,0 +1,44 @@
+
+@use "bootstrap" as *;
+
+.fiyatlandirma-container {
+  background-color: #5fb0d0; /* Background color */
+  color: white; /* Text color */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      background: white;
+      color: black;
+
+      .btn {
+        background-color: #5fb0d0;
+        border: none;
+
+        &:hover {
+          background-color: #4a8cb1;
+        }
+      }
+    }
+  }
+}
