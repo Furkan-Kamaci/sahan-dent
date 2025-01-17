@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-bootstrap',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './navbar-bootstrap.component.html',
   styleUrl: './navbar-bootstrap.component.scss'
 })
