@@ -1,0 +1,27 @@
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 0.75rem 1rem;
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #5fb0d0;
+
+    &:hover {
+      color: #4a8cb1;
+    }
+  }
+
+  .nav-link {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #5fb0d0;
+    }
+  }
+
+  .nav-link.active {
+    color: #5fb0d0;
+  }
+}

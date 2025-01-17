@@ -1,8 +1,8 @@
 <div class="verilen-hizmetler-container">
-  <div class="container mt-4 d-flex flex-column align-items-center">
-    <div class="row w-100">
+  <div class="container mt-4 d-flex justify-content-center">
+    <div class="row justify-content-center">
       <div
-        class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4"
+        class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center"
         *ngFor="let service of services"
       >
         <div class="card text-center">
@@ -16,13 +16,13 @@
             </div>
             <h5 class="card-title">{{ service.title }}</h5>
             <p class="card-text">{{ service.description }}</p>
-            <!-- <a href="#" class="btn btn-primary">Daha Fazla</a> -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="daha-fazlasi" class="d-flex justify-content-center mt-4">
+</div>
+
+  <div id="daha-fazlasi" class="text-center mt-4">
     <a href="#" class="btn btn-primary">Daha Fazla</a>
   </div>
-</div>
