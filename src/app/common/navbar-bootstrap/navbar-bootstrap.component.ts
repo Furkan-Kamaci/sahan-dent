@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './navbar-bootstrap.component.scss'
 })
 export class NavbarBootstrapComponent {
-
+  toggleNavbar(): void {
+    const navbar = document.getElementById('navbarNav');
+    if (navbar) {
+      navbar.classList.toggle('show');
+    }
+  }
 }
