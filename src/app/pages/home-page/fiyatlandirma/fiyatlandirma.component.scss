@@ -4,7 +4,7 @@
 .fiyatlandirma-container {
   background-color: #5fb0d0; /* Background color */
   color: white; /* Text color */
-  height: 100vh;
+  min-height: 100vh; /* Allow height to grow dynamically */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,22 +23,58 @@
 
   .card-container {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Space between cards */
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap cards to the next row on smaller screens */
+    width: 100%; /* Ensure cards fit within the container */
+    padding: 1rem;
 
     .card {
       background: white;
       color: black;
+      width: 18rem; /* Standardize card width */
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-      .btn {
-        background-color: #5fb0d0;
-        border: none;
+      &:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
 
-        &:hover {
-          background-color: #4a8cb1;
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .btn {
+          background-color: #5fb0d0;
+          border: none;
+          margin-top: 1rem;
+
+          &:hover {
+            background-color: #4a8cb1;
+          }
         }
       }
+    }
+  }
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .fiyatlandirma-container {
+    padding: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 1rem; /* Adjust spacing for smaller viewports */
+
+    .card {
+      width: 90%; /* Full width on smaller screens */
     }
   }
 }
