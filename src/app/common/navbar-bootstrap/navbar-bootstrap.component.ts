@@ -24,8 +24,10 @@ export class NavbarBootstrapComponent {
   }
   closeNavbar(): void {
     const navbar = document.querySelector('.navbar-collapse');
+
     if (navbar && navbar.classList.contains('show')) {
       this.renderer.removeClass(navbar, 'show');
+      this.isNavbarCollapsed = true;
     }
   }
 }
