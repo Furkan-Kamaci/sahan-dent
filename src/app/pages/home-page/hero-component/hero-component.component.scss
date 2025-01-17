@@ -1,26 +1,63 @@
-
 .hero-component-container {
-  display: flex;
-  background-color: #5fb0d0;
-}
+  background-color: #5fb0d0; /* Background color */
+  height: 100vh; /* Full viewport height */
 
-#hero-photo {
-  height: 100vh;
-  flex: 6;
+  .hero-photo {
+    height: 100%; /* Match parent height */
 
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    img {
+      height: 100%; /* Match parent div height */
+      width: 100%; /* Match parent div width */
+      object-fit: cover; /* Maintain aspect ratio while covering the area */
+    }
+  }
+
+  .hero-text {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+
+    p.lead {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
   }
 }
 
-.hero-text {
-  height: 100vh;
-  flex: 8;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-component-container {
+    height: auto; /* Allow dynamic height for smaller screens */
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    .hero-photo {
+      img {
+        height: auto; /* Allow the image to resize naturally */
+      }
+    }
+
+    .hero-text {
+      h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+      }
+
+      p.lead {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }
