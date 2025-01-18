@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './whatsapp-button.component.scss'
 })
 export class WhatsappButtonComponent {
-  @Input() whatsappNumber: string = '1234567890'; // Default number
+  @Input() whatsappNumber: string = '05541574117'; // Default number
   @Input() message: string = ''; // Optional message
 
   getWhatsAppUrl(): string {
