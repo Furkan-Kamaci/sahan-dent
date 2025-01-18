@@ -1,0 +1,30 @@
+.call-button {
+  position: fixed; /* Makes it stay in place while scrolling */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.call-button button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff; /* Primary blue */
+  border: none;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-button button:hover {
+  background-color: #0056b3;
+}
+
+.call-button button:active {
+  transform: scale(0.95);
+}
