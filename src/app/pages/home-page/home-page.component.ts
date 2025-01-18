@@ -8,8 +8,7 @@ import { DisHijyenBeltComponent } from './dis-hijyen-belt/dis-hijyen-belt.compon
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
-  // imports:[HeroComponentComponent, VerilenHizmetlerComponent, FiyatlandirmaComponent, DisHijyenBeltComponent]
-  imports:[ DisHijyenBeltComponent]
+  imports:[HeroComponentComponent, VerilenHizmetlerComponent, FiyatlandirmaComponent, DisHijyenBeltComponent]
 })
 export class HomePageComponent {
 }
