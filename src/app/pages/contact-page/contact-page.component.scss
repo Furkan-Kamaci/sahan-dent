@@ -65,3 +65,10 @@
 .nowrap {
   white-space: nowrap; /* Prevents text from wrapping */
 }
+
+.map-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
