@@ -2,11 +2,11 @@
   [center]="center"
   [zoom]="zoom"
   [options]="options"
-  style="height: 500px; width: 100%;"
+  [width]="mapStyles.width"
+  [height]="mapStyles.height"
 >
   <map-marker
     *ngFor="let marker of markers"
     [position]="marker.position"
   ></map-marker>
 </google-map>
-
