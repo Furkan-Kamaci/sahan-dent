@@ -5,7 +5,7 @@ import { MapViewComponent } from '../../components/map-view/map-view.component';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [PhoneButtonComponent, WhatsappButtonComponent, MapViewComponent],
+  imports: [MapViewComponent],
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.scss'
 })
