@@ -1,5 +1,5 @@
 <div class="cards-container">
-  <div class="card" *ngFor="let card of cards">
+  <div class="card" *ngFor="let card of cards" (click)="onCardClick(card)">
     <img [src]="card.imageUrl" alt="{{ card.description }}" />
     <div class="description">{{ card.description }}</div>
   </div>

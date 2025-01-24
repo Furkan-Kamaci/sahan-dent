@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Card {
   imageUrl: string;
@@ -10,7 +11,7 @@ interface Card {
   selector: 'app-hizmetlerimiz-page',
   templateUrl: './hizmetlerimiz-page.component.html',
   styleUrls: ['./hizmetlerimiz-page.component.scss'],
-  imports:[CommonModule]
+  imports: [CommonModule]
 })
 export class HizmetlerimizPageComponent {
   cards: Card[] = [
@@ -20,4 +21,11 @@ export class HizmetlerimizPageComponent {
     { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Estetik' },
     { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kontrol' },
   ];
+
+  constructor(private router: Router) { }
+
+  onCardClick(card: Card): void {
+    // Navigate to the detail page with the description as a route parameter
+    this.router.navigate(['/hizmetlerimiz', card.description.toLowerCase()]);
+  }
 }
