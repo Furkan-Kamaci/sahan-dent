@@ -1,1 +1,6 @@
-<p>hizmetlerimiz-page works!</p>
+<div class="cards-container">
+  <div class="card" *ngFor="let card of cards">
+    <img [src]="card.imageUrl" alt="{{ card.description }}" />
+    <div class="description">{{ card.description }}</div>
+  </div>
+</div>
