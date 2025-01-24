@@ -8,9 +8,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-//   @media (max-width: 480px) {
-//     grid-template-columns: 1fr;
-//   }
+  // Optionally re-enable for smaller screens
+  // @media (max-width: 480px) {
+  //   grid-template-columns: 1fr;
+  // }
 }
 
 .card {
@@ -25,14 +26,34 @@
     transform: scale(1.05);
   }
 
-  img {
+  .image-container {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Optional background color */
+
+    img {
+      width: 100%; /* Responsive image width */
+      height: 100%; /* Fill the container */
+      object-fit: cover; /* Crop to fit while maintaining aspect ratio */
+    }
   }
 
   .description {
     padding: 8px;
     font-size: 1.2rem;
     font-weight: bold;
+  }
+}
+
+// Adjustments for wide screens to make images slightly less square
+@media (min-width: 1200px) {
+  .card {
+    .image-container {
+      aspect-ratio: 4 / 3; /* Make it slightly rectangular on wide screens */
+    }
   }
 }

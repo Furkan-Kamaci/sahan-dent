@@ -1,62 +1,30 @@
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { HIZMETLERIMIZ } from '../../../../../public/json/hizmetlerimiz';
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-verilen-hizmetler',
-  imports: [CommonModule],
   templateUrl: './verilen-hizmetler.component.html',
-  styleUrl: './verilen-hizmetler.component.scss',
-encapsulation: ViewEncapsulation.ShadowDom,
+  styleUrls: ['./verilen-hizmetler.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated, // Use Emulated encapsulation
+  imports: [CommonModule]
 })
-export class VerilenHizmetlerComponent {
-  services = [
-    {
-      title: 'Diş Çekimi',
-      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Ortodontik Tedavi',
-      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Pedodonti (Çocuk Diş Hekimliği)',
-      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
-      image: 'images/dis-image.png',
-    },
+export class VerilenHizmetlerComponent implements OnInit {
+  services: { title: string; description: string; image: string }[] = [];
 
-    {
-      title: 'Diş Çekimi',
-      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Ortodontik Tedavi',
-      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Pedodonti (Çocuk Diş Hekimliği)',
-      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
-      image: 'images/dis-image.png',
-    },
+  constructor(private router: Router) {}
 
-    {
-      title: 'Diş Çekimi',
-      description: 'Hasarlı, çürümüş veya iltihaplı dişlerin çekilmesi gerektiğinde bu işlem uygulanır. Diş çekimi sırasında ağrı ve rahatsızlık minimize edilir.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Ortodontik Tedavi',
-      description: 'Dişlerin düzensiz bir şekilde hizalanması veya çene problemleri düzeltilmesi gerektiğinde, diş hekimleri ortodontik tedavi uygularlar.',
-      image: 'images/dis-image.png',
-    },
-    {
-      title: 'Pedodonti (Çocuk Diş Hekimliği)',
-      description: 'Çocukların ağız ve diş sağlığını takip ederler. Ayrıca çocuklara diş fırçalama alışkanlığı kazandırmak ve diş çürümelerini önlemek için önerilerde bulunurlar.',
-      image: 'images/dis-image.png',
-    },
-  ];
+  ngOnInit(): void {
+    this.services = HIZMETLERIMIZ.map((item) => ({
+      title: item.title,
+      description: item.details.slice(0, 100) + '...', // Truncate for preview
+      image: 'images/dis-image.png', // Static image for all services
+    }));
+  }
 
+  onCardClick(title: string): void {
+    // this.router.navigate(['/hizmetlerimiz', title.toLowerCase().replace(/\s+/g, '-')]);
+    this.router.navigate(['/hizmetlerimiz', title]);
+  }
 }

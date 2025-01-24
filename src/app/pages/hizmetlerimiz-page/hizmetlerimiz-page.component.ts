@@ -15,12 +15,12 @@ interface Card {
 })
 export class HizmetlerimizPageComponent {
   cards: Card[] = [
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş beyazlatma (Bleaching)' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Acil Diş Tedavisi' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'İmplant' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Ortodonti (Tel Tedavisi)' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Ortodontı (Şeffaf Plak)' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş Dolgusu' },
+    { imageUrl: '/images/hizmetler/bleaching.png', description: 'Diş beyazlatma (Bleaching)' },
+    { imageUrl: '/images/hizmetler/acil-tedavi.png', description: 'Acil Diş Tedavisi' },
+    { imageUrl: '/images/hizmetler/implant.png', description: 'İmplant' },
+    { imageUrl: '/images/hizmetler/tel.png', description: 'Ortodonti (Tel Tedavisi)' },
+    { imageUrl: '/images/hizmetler/plak.png', description: 'Ortodontı (Şeffaf Plak)' },
+    { imageUrl: '/images/hizmetler/dolgu.png', description: 'Diş Dolgusu' },
     { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kanal Tedavisi' },
     { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kanal Yineleme (Retreatment)' },
     { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Gülüş Tasarımı' },
@@ -44,6 +44,6 @@ export class HizmetlerimizPageComponent {
 
   onCardClick(card: Card): void {
     // Navigate to the detail page with the description as a route parameter
-    this.router.navigate(['/hizmetlerimiz', card.description.toLowerCase()]);
+    this.router.navigate(['/hizmetlerimiz', card.description]);
   }
 }

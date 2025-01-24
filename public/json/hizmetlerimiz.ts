@@ -1,32 +1,32 @@
 export const HIZMETLERIMIZ = [
   {
     title: 'Diş beyazlatma (Bleaching)',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/bleaching.png',
     details: 'Diş beyazlatma (bleaching), dişlerinizin doğal rengini açmak ve daha beyaz bir görünüm sağlamak için uygulanan bir estetik tedavidir. Güvenli ve etkili yöntemlerle, diş minesine zarar vermeden gerçekleştirilir.'
   },
   {
     title: 'Acil Diş Tedavisi',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/acil-tedavi.png',
     details: 'Acil diş tedavisi, diş ağrısı, kırık diş veya enfeksiyon gibi acil durumlarda hızlı ve etkili müdahaleyi içerir. Uzman ekiplerimiz, acil durumlarda yanınızda.'
   },
   {
     title: 'İmplant',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/implant.png',
     details: 'Diş implantları, eksik dişlerin yerine konması için kullanılan yapay diş kökleridir. Kalıcı ve estetik çözümler sunar, doğal bir görünüm ve kullanım sağlar.'
   },
   {
     title: 'Ortodonti (Tel Tedavisi)',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/tel.png',
     details: 'Ortodontik tedavi, dişlerin ve çenelerin düzgün hizalanmasını sağlar. Tel tedavisi, hem estetik hem de fonksiyonel sorunları çözmek için etkili bir yöntemdir.'
   },
   {
     title: 'Ortodontı (Şeffaf Plak)',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/plak.png',
     details: 'Şeffaf plaklar, dişlerinizi düzeltmek için kullanılan neredeyse görünmez apareylerdir. Rahat, çıkarılabilir ve estetik bir çözüm sunar.'
   },
   {
     title: 'Diş Dolgusu',
-    imageUrl: '/images/dis-hijyen-belt.jpeg',
+    imageUrl: '/images/hizmetler/dolgu.png',
     details: 'Diş dolgusu, çürük veya kırık dişlerin onarımı için kullanılan bir tedavi yöntemidir. Dişin doğal yapısını ve fonksiyonunu geri kazandırır.'
   },
   {

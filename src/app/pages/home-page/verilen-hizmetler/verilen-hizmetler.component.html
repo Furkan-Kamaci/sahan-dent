@@ -4,6 +4,8 @@
       <div
         class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center"
         *ngFor="let service of services"
+        (click)="onCardClick(service.title)"
+        style="cursor: pointer"
       >
         <div class="card text-center">
           <div class="card-body">
@@ -22,7 +24,3 @@
     </div>
   </div>
 </div>
-
-  <div id="daha-fazlasi" class="text-center mt-4">
-    <a href="#" class="btn btn-primary">Daha Fazla</a>
-  </div>
