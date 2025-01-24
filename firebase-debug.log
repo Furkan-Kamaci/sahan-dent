@@ -1,0 +1,21 @@
+[debug] [2025-01-24T20:23:45.471Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T20:23:45.473Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-24T20:23:45.473Z] CLI Version:   13.29.1
+[debug] [2025-01-24T20:23:45.473Z] Platform:      win32
+[debug] [2025-01-24T20:23:45.473Z] Node Version:  v18.20.5
+[debug] [2025-01-24T20:23:45.474Z] Time:          Fri Jan 24 2025 23:23:45 GMT+0300 (GMT+03:00)
+[debug] [2025-01-24T20:23:45.474Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T20:23:45.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T20:23:45.524Z] > authorizing via signed-in user (foorcun@gmail.com)
+[debug] [2025-01-24T20:23:45.524Z] [iam] checking project js-test-e5720 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-24T20:23:45.525Z] Checked if tokens are valid: true, expires at: 1737751518752
+[debug] [2025-01-24T20:23:45.525Z] Checked if tokens are valid: true, expires at: 1737751518752
+[debug] [2025-01-24T20:23:45.526Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-test-e5720:testIamPermissions [none]
+[debug] [2025-01-24T20:23:45.526Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-test-e5720:testIamPermissions x-goog-quota-user=projects/js-test-e5720
+[debug] [2025-01-24T20:23:45.527Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-test-e5720:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T20:23:46.524Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-test-e5720:testIamPermissions 200
+[debug] [2025-01-24T20:23:46.525Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-test-e5720:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T20:23:46.525Z] Checked if tokens are valid: true, expires at: 1737751518752
+[debug] [2025-01-24T20:23:46.525Z] Checked if tokens are valid: true, expires at: 1737751518752
+[debug] [2025-01-24T20:23:46.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/js-test-e5720 [none]

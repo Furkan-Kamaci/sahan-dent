@@ -15,13 +15,31 @@ interface Card {
 })
 export class HizmetlerimizPageComponent {
   cards: Card[] = [
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Hijyen' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Tedavi' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Bakım' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Estetik' },
-    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kontrol' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş beyazlatma (Bleaching)' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Acil Diş Tedavisi' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'İmplant' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Ortodonti (Tel Tedavisi)' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Ortodontı (Şeffaf Plak)' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş Dolgusu' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kanal Tedavisi' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Kanal Yineleme (Retreatment)' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Gülüş Tasarımı' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş Çekimi' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Cerrahi Çekim' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Hareketli Protez' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Zirkonyum' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş Taşı Temizliği' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Laminate' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: '20lik Çekimi' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Botox' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Gece Plağı' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Sabit Protez' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Çocuk Diş Hekimliği (Pedodonti)' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Yer Tutucu' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Dijital Ölçü' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Diş Eti Sağlığı' },
+    { imageUrl: '/images/dis-hijyen-belt.jpeg', description: 'Bruksizm Tedavisi' }
   ];
-
   constructor(private router: Router) { }
 
   onCardClick(card: Card): void {
